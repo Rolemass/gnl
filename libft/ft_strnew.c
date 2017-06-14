@@ -6,7 +6,7 @@
 /*   By: rolemass <rolemass@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/18 20:09:49 by rolemass          #+#    #+#             */
-/*   Updated: 2016/11/24 20:04:12 by rolemass         ###   ########.fr       */
+/*   Updated: 2017/06/14 18:15:48 by rolemass         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_strnew(size_t size)
 	new = (char*)malloc(sizeof(char) * (size + 1));
 	if (new == NULL)
 		return (NULL);
-	while (i <= size + 1)
+	while (i <= size)
 	{
 		new[i] = '\0';
 		i++;
